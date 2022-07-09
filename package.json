@@ -1,0 +1,25 @@
+{
+  "name": "mod10-chall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fathpinder/mod10-chall.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fathpinder/mod10-chall/issues"
+  },
+  "homepage": "https://github.com/Fathpinder/mod10-chall#readme",
+  "devDependencies": {
+    "jest": "^28.1.2"
+  }
+}
