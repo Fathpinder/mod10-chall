@@ -1,9 +1,9 @@
 let teamArr = [];
 generateMgmr = manager => {
     return `
-    <div class='card bg-primary col-sm text-left justify-space-around m-2 text-nowrap'>
+    <div class='card bg-primary col-sm text-left justify-space-around m-2 text-wrap'>
         <h2 class='card-title'>${manager.name}</h2>
-        <div class='card-body'>
+        <div class='card-body py-2'>
             <h3>ID: ${manager.id}</h3>
             <h3>Email: <a  class='text-success' href = "mailto:${manager.email}">${manager.email}</a></h3>
             <h3>Office: ${manager.officeNumber}</h3>
@@ -15,22 +15,26 @@ generateMgmr = manager => {
 
 generateEng = engineer => {
     return `
-    <div class='card bg-primary col-sm text-left justify-space-around m-2 text-nowrap'>
-    <h2 class='card-body'>${engineer.name}</h2>
-    <h3>ID: ${engineer.id}</h3>
-    <h3>Email: <a class='text-success' href = "mailto: ${engineer.email}">${engineer.email}</a></h3>
-    <h3>Github: <a class='text-success' href="https://github.com/${engineer.github}">${engineer.github}</a></h3>
-    <p class='text-uppercase font-weight-bold'>${engineer.role}</p>
+    <div class='card bg-primary col-sm text-left justify-space-around m-2 text-wrap'>
+    <h2 class='card-title'>${engineer.name}</h2>
+        <div class='card-body py-2'>
+        <h3>ID: ${engineer.id}</h3>
+        <h3>Email: <a class='text-success' href = "mailto: ${engineer.email}">${engineer.email}</a></h3>
+        <h3>Github: <a class='text-success' href="https://github.com/${engineer.github}" target='_blank'>${engineer.github}</a></h3>
+        <p class='text-uppercase font-weight-bold'>${engineer.role}</p>
+        </div>
     </div>`
 };
 generateTern = intern => {
     return `
-    <div class='card bg-primary col-sm text-left justify-space-around m-2 text-nowrap'>
-    <h2 class='card-body'>${intern.name}</h2>
-    <h3>ID: ${intern.id}</h2>
-    <h3>Email: <a class='text-success' href = "mailto: ${intern.email}">${intern.email}</a></h2></h2>
-    <h3>School: ${intern.school}</h2>
-    <p class='text-uppercase font-weight-bold'>${intern.role}</p>
+    <div class='card bg-primary col-sm text-left justify-space-around m-2 text-wrap'>
+    <h2 class='card-title'>${intern.name}</h2>
+        <div class='card-body py-2'>
+        <h3>ID: ${intern.id}</h2>
+        <h3>Email: <a class='text-success' href = "mailto: ${intern.email}">${intern.email}</a></h2></h2>
+        <h3>School: ${intern.school}</h2>
+        <p class='text-uppercase font-weight-bold'>${intern.role}</p>
+        </div>
     </div>`
 };
 generateTeam = team => {
